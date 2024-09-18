@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Comparar Textos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/diff@5.1.0/dist/diff.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <label for="Original">Original</label>
+      <div class="contenteditable" id="Original" contenteditable="true"></div>
+    </div>
+    <div>
+      <label for="Modificado">Modificado</label>
+      <div class="contenteditable" id="Modificado" contenteditable="true"></div>
+    </div>
+    <input class="button-primary" type="submit" id="btnComparar" value="Comparar">
+    <div id="Resultado" class="contenteditable"></div> <!-- Mostrar diferencias aquí -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
