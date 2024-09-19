@@ -6,6 +6,11 @@ $('#btnComparar').on('click', function () {
     mostrarDiferencias(diferencias);
 });
 
+$('#btnLimpiar').on('click', function () {
+    $('#Original').text('');
+   $('#Modificado').text('');
+});
+
 function encontrarDiferencias(texto1, texto2) {
     return Diff.diffWords(texto1, texto2);
 }
